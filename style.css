@@ -8,7 +8,7 @@
 
 
 - Line heights
-
+1.05
 
 - Letter spacing
 
@@ -50,7 +50,7 @@ body {
 }
 
 h2 {
-    font-size: 62px;
+    font-size: 6.2rem;
     font-weight: 800;
     letter-spacing: -0.75px;
     margin-bottom: 24px;
