@@ -44,18 +44,18 @@ const oForm = {
         this.aChoiceHistory.push(oEvent.target.dataset.value);
         const oNextPage = this._getPageByHistory();
 
-        document.getElementById(
-            `section-${oCurrentPage.section}`
-        ).style.display = "none";
-
         if (oNextPage.result) {
-            oResultText = document.querySelector("#section-results h2");
+            oResultText = document.querySelector("#section-result h2");
             oResultText.innerHTML = oNextPage.result;
-            document.getElementById(`section-results`).style.display = "block";
+            document.getElementById(`section-questions`).style.display = "none";
+            document.getElementById(`section-result`).style.display = "flex";
+
             return;
         }
 
-        document.getElementById(`section-${oNextPage.section}`).style.display =
+        document.getElementById(`q-${oCurrentPage.section}`).style.display =
+            "none";
+        document.getElementById(`q-${oNextPage.section}`).style.display =
             "block";
     },
 
@@ -72,10 +72,9 @@ const oForm = {
         this.aChoiceHistory.pop();
         const oPrevPage = this._getPageByHistory();
 
-        document.getElementById(
-            `section-${oCurrentPage.section}`
-        ).style.display = "none";
-        document.getElementById(`section-${oPrevPage.section}`).style.display =
+        document.getElementById(`q-${oCurrentPage.section}`).style.display =
+            "none";
+        document.getElementById(`q-${oPrevPage.section}`).style.display =
             "block";
     },
 };

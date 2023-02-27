@@ -1,0 +1,49 @@
+footer {
+    padding: 2.4rem;
+    font-size: 1.6rem;
+    border-top: 1px solid #ccdce7;
+    color: #777;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 9px;
+    font-size: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #8400ff;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #7700e7;
+}
+
+.btn-primary-dark {
+    color: white;
+    background-color: #5c00b2;
+}
+
+.btn-primary-dark:hover,
+.btn-primary-dark:active {
+    background-color: #52009f;
+}
+
+.hero {
+    max-width: 108rem;
+    margin: 0 auto;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

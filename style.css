@@ -46,86 +46,30 @@ html,
 body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    font-size: 62.5%;
 }
 
 h2 {
     font-size: 62px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.75px;
     margin-bottom: 24px;
 }
 
-.radio-choices {
+.q-buttons {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.section-body {
-    margin-bottom: 30px;
-}
-
-.section-buttons {
-    display: flex;
-}
-
-.btn {
-    padding: 8px 16px;
-    border-radius: 9px;
-    font-size: inherit;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-primary {
-    color: white;
-    background-color: #8400ff;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-    background-color: #7700e7;
-}
-
-.btn-primary-dark {
-    color: white;
-    background-color: #5c00b2;
-}
-
-.btn-primary-dark:hover,
-.btn-primary-dark:active {
-    background-color: #52009f;
-}
-
-.is-flex {
-    display: flex;
-}
-
-.justify-content-center {
     justify-content: center;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
-.justify-content-end {
-    justify-content: end;
+.link {
+    font-size: 1.6rem;
+    color: #bababa;
+    text-decoration: none;
+    margin-left: 1rem;
 }
 
-.justify-content-space-between {
-    justify-content: space-between;
-}
-
-.justify-content-space-evenly {
-    justify-content: space-evenly;
-}
-
-a {
-    font-size: 16px;
+.link:hover,
+.link:active {
+    color: #aaa;
 }

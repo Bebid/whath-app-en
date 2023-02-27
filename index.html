@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>What-App-en?</title>
+        <meta
+            name="description"
+            content="What-App-en is an app that guides user in their decision specially when they are procastinated"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="hero" id="section-questions">
+                <div id="q-what-happened">
+                    <h2>What happened?</h2>
+                    <div class="q-buttons">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-proceed"
+                            data-value="Y"
+                        >
+                            I did, and wish I didn't
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary-dark btn-proceed"
+                            data-value="N"
+                        >
+                            I didn't, and wish I did
+                        </button>
+                    </div>
+                </div>
+                <div id="q-fix-it" style="display: none">
+                    <a href="#" class="link link-return">Back</a>
+                    <h2>Can you fix it?</h2>
+                    <div class="q-buttons">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-proceed"
+                            data-value="Y"
+                        >
+                            Yes
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary-dark btn-proceed"
+                            data-value="N"
+                        >
+                            No
+                        </button>
+                    </div>
+                </div>
+                <div id="q-do-it" style="display: none">
+                    <a href="#" class="link link-return">Back</a>
+                    <h2>Can you do it now?</h2>
+                    <div class="q-buttons">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-proceed"
+                            data-value="Y"
+                        >
+                            Yes
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary-dark btn-proceed"
+                            data-value="N"
+                        >
+                            No
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="hero" id="section-result" style="display: none">
+                <div>
+                    <h2>Do better next time!</h2>
+                    <a href="index.html" class="link">Go back to home page</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Copyright &copy; <span class="year">1995</span> John David Apostol,
+            All rights reserved.
+        </footer>
+
+        <script>
+            const sCurrentYear = new Date().getFullYear();
+            const oFooterYearEl = document.querySelector(".year");
+            oFooterYearEl.textContent = sCurrentYear;
+        </script>
+    </body>
+</html>
